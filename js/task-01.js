@@ -12,7 +12,6 @@ item.forEach(function (child) {
     const nameOfTitle = child.firstElementChild.textContent;
     console.log(`Category: ${nameOfTitle}`);
 
-    const countOfChild = child.lastElementChild.childElementCount;
+    const countOfChild = Number(child.lastElementChild.childElementCount);
     console.dir(`Elements: ${countOfChild}`);
-    
 });
